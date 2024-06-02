@@ -1,2 +1,7 @@
 folders:
   - Ansible_Folder
+
+ansible_jobs:
+  - { component: 'frontend' }
+  - { component: 'mongodb' }
+  - { component: 'catalogue' }

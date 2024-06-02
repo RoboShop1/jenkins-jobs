@@ -2,3 +2,10 @@
   ansible.builtin.include_tasks:
     file: folder-jobs.yml
   loop: "{{ folders }}"
+
+- name: To include tasks of m_jobs to create jobs
+  ansible.builtin.include_tasks:
+    file: m_jobs.yml
+  loop: "{{ ansible_jobs }}"
+  vars:
+    folder: "Ansible_Folder"
