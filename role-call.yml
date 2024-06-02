@@ -1,0 +1,5 @@
+- name: To create jenkins-jobs through ansible
+  become: yes
+  hosts: localhost
+  roles:
+    - {{ role_name }}
