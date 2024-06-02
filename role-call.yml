@@ -2,4 +2,4 @@
   become: yes
   hosts: localhost
   roles:
-    - {{ role_name }}
+    - "{{ role_name }}"
