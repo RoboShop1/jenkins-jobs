@@ -1,4 +1,4 @@
-- name: To create folder of {{ item }}
+- name: To create folder of {{ folder.item }}
   community.general.jenkins_job:
     config: "{{ lookup('template', 'templates/folder.xml') }}"
     name: "{{ item }}"
