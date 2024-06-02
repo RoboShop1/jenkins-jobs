@@ -1,5 +1,4 @@
 - name: To include tasks of folder-jobs to create jobs
   ansible.builtin.include_tasks:
     file: folder-jobs.yml
-  vars:
-    folder: "{{ folders }}"
+  loop: "{{ folders }}"
