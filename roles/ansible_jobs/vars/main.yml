@@ -5,3 +5,6 @@ ansible_jobs:
   - { component: 'frontend' }
   - { component: 'mongodb' }
   - { component: 'catalogue' }
+  - { component: 'redis' }
+  - { component: 'user' }
+  - { component: 'cart' }
