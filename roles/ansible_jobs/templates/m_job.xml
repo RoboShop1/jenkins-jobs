@@ -37,7 +37,7 @@
     <concurrentBuild>false</concurrentBuild>
     <builders>
         <hudson.tasks.Shell>
-            <command>ansible-playbook -i {{ item.component }}-dev.azcart.online, -e component={{ item.component }} role-call.yml</command>
+            <command>ansible-playbook -i {{ item.component }}-dev.azcart.online, -e ansible_user=centos -e ansible_password=DevOps321 -e component={{ item.component }} role-call.yml</command>
             <configuredLocalRules/>
         </hudson.tasks.Shell>
     </builders>
